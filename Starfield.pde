@@ -1,15 +1,46 @@
-//your code here
+NormalParticle [] bob;
+
+
 void setup()
 {
-	//your code here
+	size (700, 700);
+	background(0);
+	bob = new NormalParticle [130];
+   for (int i = 0; i < bob.length; i++)
+   {
+    bob[i] = new NormalParticle();
+   }
 }
 void draw()
 {
-	//your code here
+	for (int i = 0; i < bob.length; i++)
+   {
+    bob[i].move();
+    bob[i].show();
+   }
 }
 class NormalParticle
 {
-	//your code here
+	int color;
+	double x, y, speed, angle;
+
+	NormalParticle()
+	{
+	color = ((int)(Math.random*255),255,255);
+	x = 
+	y = 
+	speed = 
+	angle =
+	}
+	void show
+	{
+		//
+	}
+	void move
+	{
+		//
+	}
+	
 }
 interface Particle
 {
