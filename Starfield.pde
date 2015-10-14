@@ -23,25 +23,25 @@ void draw()
 
 class NormalParticle
 {
-	//int myColor;
 	float x, y, speed, angle;
 	NormalParticle()
 	{
 		x = 350;
 		y = 350; 
-		speed = 10;
-		angle = (float)(Math.random()*100);
+		speed = (float)(Math.random()*500);
+		angle = (float)(Math.random()*500);
 	}
 
 	void show()
 	{
 		noStroke();
-		fill((int)(Math.random()*255), 255, 255);
+		fill((int)(Math.random()*255), (int)(Math.random()*255), 255);
 		ellipse(x, y, 10, 10);
 	}
 
 	void move()
 	{
+		//frameRate(200);
 		x = cos(angle)*speed + x;
 		y = sin(angle)*speed + y;
 		angle++;
