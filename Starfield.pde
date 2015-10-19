@@ -42,21 +42,22 @@ class NormalParticle
 	void move()
 	{
 		//frameRate(200);
-		x = cos(angle)*speed + x;
-		y = sin(angle)*speed + y;
+		x = (float)(Math.cos(angle)*speed + x);
+		y = (float)(Math.sin(angle)*speed + y);
 		angle++;
 	}
 	
 }
 // interface Particle
 // {
-// 	//your code here
+// 	public void show();
+//  public void move();
 // }
-// class OddballParticle //uses an interface
+// class OddballParticle implements Particle //uses an interface
 // {
 // 	//your code here
 // }
-// class JumboParticle //uses inheritance
+// class JumboParticle extends NormalParticle //uses inheritance
 // {
 // 	//your code here
 // }
