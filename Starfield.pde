@@ -32,7 +32,7 @@ class NormalParticle implements Particle
     x = 350;
     y = 350; 
     speed = (Math.random()*3);
-    angle = (Math.random()*5);
+    angle = (Math.random()*Math.PI*2);
     Color = color((int)(Math.random()*255), (int)(Math.random()*255), 255);
   }
 
@@ -40,7 +40,7 @@ class NormalParticle implements Particle
   {
     noStroke();
     fill(Color);
-    ellipse((float)x, (float)y, 10, 10);
+    ellipse((float)x, (float)y, 5, 5);
   }
 
   public void move()
@@ -75,7 +75,7 @@ class OddballParticle implements Particle //uses an interface
   {
     noStroke();
     fill(Color);
-    ellipse((float)x, (float)y, 10, 10);
+    ellipse((float)x, (float)y, 5, 5);
   }
 
   public void move()
@@ -92,7 +92,7 @@ class JumboParticle extends NormalParticle //uses inheritance
   {
     noStroke();
     fill(Color);
-    ellipse((float)x, (float)y, 30, 30);
+    ellipse((float)x, (float)y, 15, 15);
   }
     
   public void move()
