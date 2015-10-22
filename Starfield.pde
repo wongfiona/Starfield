@@ -1,6 +1,5 @@
 Particle [] bob;
 
-
 public void setup()
 {
   size (700, 700);
@@ -49,7 +48,6 @@ class NormalParticle implements Particle
     y = Math.sin(angle)*speed + y;
     angle += 0.01;
   }
-
 }
 
 interface Particle
